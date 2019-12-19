@@ -1,0 +1,32 @@
+<main class="superheroes">
+  <div class="container superheroes-container">
+    <div class="row superheroes-container-list">
+      {{#each superheroes}}
+      <div class="item">
+        <div class="item-wrapper">
+          <a class="item-link" href="/superhero/{{id}}"></a>
+          <div class="item-img bgi">
+            <img src="/img/{{nickname}}/{{images.[0]}}" alt="" />
+          </div>
+          <div class="item-content">
+            <div class="item-name"><strong>{{nickname}}</strong></div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{#if countPages}}
+    <div class="row">
+      <div class="pagination">
+        {{#if prevPage}}
+        <a href="/?page={{prevPage}}">&laquo;</a>
+        {{/if}}
+        {{{pagination countPages currentPage}}}
+        {{#if nextPage}}
+        <a href="/?page={{nextPage}}">&raquo;</a>
+        {{/if}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</main>

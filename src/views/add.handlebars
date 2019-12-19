@@ -1,0 +1,37 @@
+<main class="superheroes">
+  <div class="container">
+    <div class="row">
+      <form action="/add" method="POST" class="col-lg-6" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>Nickname</label>
+          <input type="text" name="nickname" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Real name</label>
+          <input type="text" name="real_name" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Origin description</label>
+          <textarea class="form-control" placeholder="Origin description" name="origin_description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Super powers</label>
+          <textarea class="form-control" placeholder="Super powers" name="superpowers" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Catch phrase</label>
+          <input type="text" class="form-control" name="catch_phrase" required />
+        </div>
+        <div class="form-group">
+          <label>Title image of hero: </label>
+          <input type="file" name="images" class="form-control-file"  required/>
+        </div>
+        <div class="form-group">
+          <label>Images of hero: </label>
+          <input type="file" name="images" class="form-control-file" multiple />
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </form>
+    </div>
+  </div>
+</main>

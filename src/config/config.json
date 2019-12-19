@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "Petr I",
+    "password": "root",
+    "database": "superheroes",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "Petr I",
+    "password": "root",
+    "database": "database_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "Petr I",
+    "password": "root",
+    "database": "database_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}

@@ -1,0 +1,52 @@
+<main class="superheroes">
+  <div class="container single-superhero">
+    <div class="row">
+      <div class="col-12 item">
+        <div class="item-img">
+          <div class="item-img-bg">
+            {{#each item.images}}
+            <img src="../img/{{@root.item.nickname}}/{{this}}" alt="" />
+            {{/each}}
+          </div>
+          <div class="item-img-sm">
+            {{#each item.images}}
+            <img src="../img/{{@root.item.nickname}}/{{this}}" alt="" />
+            {{/each}}
+          </div>
+        </div>
+        <div class="item-side">
+          <div class="item-side-content">
+            <div class="item-nickname">
+              <strong>Nickname:</strong> {{item.nickname}}
+            </div>
+            <div class="item-real-name">
+              <strong>Real name:</strong> {{item.real_name}}
+            </div>
+            <div class="item-origin-description">
+              <strong>Origin description:</strong> {{item.origin_description}}
+            </div>
+            <div class="item-superpowers">
+              <strong>Super powers: </strong> {{item.superpowers}}
+            </div>
+            <div class="item-catch-phrase">
+              <strong>Catch phrase: </strong>“{{item.catch_phrase}}”
+            </div>
+          </div>
+          <div class="item-controls">
+            <form>
+              <button type="submit" class="item-controls-update">
+                Update
+              </button>
+            </form>
+            <form method="POST" action="/superhero?_method=DELETE">
+              <input type="hidden" name="id" value={{item.id}}>
+              <button type="submit" class="item-controls-delete">
+                Delete
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,7 +1,7 @@
 # Hello
 That was interesting task and I enjoyed to make it. Maybe it's not very professional way to code but I think that I can improve code, just need time.
 
-I spent **11 hours** for task.
+I spent **15 hours** for task.
 
 Most challenging was working with files. It's first time when I worked with them, but it give good experience for me. Also pagination was hard too.
 

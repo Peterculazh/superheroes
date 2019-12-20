@@ -26,7 +26,6 @@
     "pg-hstore": "^2.3.3",
     "phantomjs": "^2.1.7",
     "rimraf": "^3.0.0",
-    "sequelize": "^5.21.3",
-    "supertest": "^4.0.2"
+    "sequelize": "^5.21.3"
   }
 }

@@ -5,7 +5,8 @@
     "database": "superheroes",
     "host": "localhost",
     "dialect": "postgres",
-    "operatorsAliases": false
+    "operatorsAliases": false,
+    "logging": false
   },
   "test": {
     "username": "Petr I",
